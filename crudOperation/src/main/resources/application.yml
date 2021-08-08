@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: elias.spring.boot.crud
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/springcrud
+    username: root
+    password: root
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
